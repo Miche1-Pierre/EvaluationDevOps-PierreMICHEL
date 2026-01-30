@@ -5,11 +5,11 @@ import java.util.List;
 public class HtmlFormatHelper {
 
     public String getBoldFormat(String content) {
-        return "<b>" + content + "</b>";
+        return "<b>" + content + "</b>"; // Chemin d'exécution 1
     }
 
     public String getItalicFormat(String content) {
-        return "<i>" + content + "</i>";
+        return "<i>" + content + "</i>"; // Chemin d'exécution 2
     }
 
     public String getFormattedListElements(List<String> contents) {
@@ -23,6 +23,6 @@ public class HtmlFormatHelper {
         }
 
         htmlList.append("</ul>");
-        return htmlList.toString();
+        return htmlList.toString(); // Chemin d'exécution 3
     }
 }
